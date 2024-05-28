@@ -25,14 +25,10 @@ def find_next_square(sq):
     # Return the next square if sq is a square, -1 otherwise
     sq = int(sq)
     radix = sq **(1/2)
-    print(radix)
     if radix % 1 == 0:
         next_square = radix + 1
         return int(next_square ** 2)
-    # next_square = radix + 1
-    # if next_square % 2 == 0:
-    #     return int(next_square ** 2)
     else:
         return -1
 
-print(find_next_square(15241383936))
+print(find_next_square(319225))
